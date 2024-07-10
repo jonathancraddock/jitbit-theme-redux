@@ -1,0 +1,51 @@
+:root { 
+    /* Define theme colours */
+    /* https://design-system.service.gov.uk/styles/colour */
+    --govuk-colour-black:           #0b0c0c;
+    --govuk-text-colour:            var(--govuk-colour-black);
+    --govuk-link-active-colour:     var(--govuk-colour-black);
+    --govuk-input-border-colour:    var(--govuk-colour-black);
+    --govuk-focus-text-colour:      var(--govuk-colour-black);
+
+    --govuk-colour-dark-grey:       #505a5f;
+    --govuk-secondary-text-colour:  var(--govuk-colour-dark-grey);
+
+    --govuk-colour-mid-grey:        #b1b4b6;
+    --govuk-border-colour:          var(--govuk-colour-mid-grey);
+
+    --govuk-colour-red:             #d4351c;
+    --govuk-error-colour:           var(--govuk-colour-red);
+
+    --govuk-colour-yellow:          #ffdd00;
+    --govuk-focus-colour:           var(--govuk-colour-yellow);
+
+    --govuk-colour-green:           #00703c;
+    --govuk-success-colour:         var(--govuk-colour-green);
+
+    --govuk-colour-blue:            #1d70b8;
+    --govuk-link-colour:            var(--govuk-colour-blue);
+    --govuk-brand-colour:           var(--govuk-colour-blue);
+
+    --govuk-colour-dark-blue:       #003078;
+    --govuk-link-hover-colour:      var(--govuk-colour-dark-blue);
+
+    --govuk-colour-purple:          #4c2c92;
+    --govuk-link-visited-colour:    var(--govuk-colour-purple);
+
+    /* Additional colours from GDS palette */
+    --govuk-colour-light-blue:      #5694ca;
+    --govuk-colour-light-grey:      #f3f2f1;
+    --govuk-colour-white:           #ffffff;
+    --govuk-colour-light-purple:    #6f72af;
+    --govuk-colour-bright-purple:   #912b88;
+    --govuk-colour-pink:            #d53880;
+    --govuk-colour-light-pink:      #f499be;
+    --govuk-colour-orange:          #f47738;
+    --govuk-colour-brown:           #b58840;
+    --govuk-colour-light-green:     #85994b;
+    --govuk-colour-turquoise:       #28a197;
+
+    /* Custom brand colours */
+    /* https://github.com/alphagov/govuk-frontend/blob/main/packages/govuk-frontend/src/govuk/settings/_colours-organisations.scss */
+    --govuk-colour-moj:             #5a5c92;
+}
