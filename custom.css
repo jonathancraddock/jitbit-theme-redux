@@ -49,3 +49,8 @@
     /* https://github.com/alphagov/govuk-frontend/blob/main/packages/govuk-frontend/src/govuk/settings/_colours-organisations.scss */
     --govuk-colour-moj:             #5a5c92;
 }
+
+/* Theme Colours */
+a {
+    color: var(--govuk-link-colour);
+  }
