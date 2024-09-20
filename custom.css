@@ -50,7 +50,73 @@
     --govuk-colour-moj:             #5a5c92;
 }
 
+
+/* ================================================ */
+
 /* Theme Colours */
+/* - - - - - - - */
+
 a {
-    color: var(--govuk-link-colour);
-  }
+color: var(--govuk-link-colour);
+}
+
+/* Ensure 'Crown' logo is correct colour for the user's selected theme */
+#headerNav img[alt="HelpDesk"]:not(:where(.dark,.dark *)) {
+  filter: invert(100%);
+}
+
+
+/* ================================================ */
+
+/* Focus Behaviour */
+/* - - - - - - - - */
+
+a:focus, a:focus-visible {
+    background-color: var(--govuk-focus-colour);
+    color: var(--govuk-colour-black);
+    outline: 3px solid #fd0;
+    outline-offset: 4px;
+    box-shadow: 0 0 0 4px var(--govuk-focus-colour);
+    border-radius: 0;
+}
+
+a:focus span, a:focus-visible span {
+    background-color: var(--govuk-focus-colour);
+    color: var(--govuk-colour-black);
+    outline: 3px solid #fd0;
+    outline-offset: 4px;
+    box-shadow: 0 0 0 4px var(--govuk-focus-colour);
+    border-radius: 0;
+}
+
+/* test behaviour in dark mode */
+a:focus:where(.dark,.dark *), a:focus-visible:where(.dark,.dark *) {
+    --tw-text-opacity: 1;
+    background-color: var(--govuk-focus-colour);
+    color: rgb(var(--accent-color-dark-text) / var(--tw-text-opacity));
+}
+
+
+/* ================================================ */
+
+/* Button Styles */
+/* - - - - - - - */
+
+.bluebutton,
+  input[type="submit"],
+  button[type="button"] {
+  border-radius: 0;
+}
+
+
+/* ================================================ */
+
+
+/* Admin Pages */
+/* ----------- */
+
+/* Set a more useful height on Custom CSS/JS fields */
+textarea#CustomJS, textarea#CustomCSS {
+  height: 500px;
+  line-height: 1.2em;
+}
